@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Form</title>
+    <style>
+        /* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: rgb(255, 50, 190);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+header .logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 50, 190);
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 50, 190);;
+}
+
+main {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+main h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+form .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form .form-group input,
+form .form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form .form-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+form .form-actions button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: rgb(255, 50, 190);;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form .form-actions button[type="reset"] {
+    background-color: #6c757d;
+}
+
+form .form-actions button:hover {
+    opacity: 0.9;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 10px 0;
+    background-color: #fff;
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+}
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="She's Fit">She's Fit</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Membership</a></li>
+                <li><a href="#">Schedule</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Membership Form</h1>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                <select id="age" name="age">
+                    <option value="">Membership Type</option>
+                    <option value="student">Student</option>
+                    <option value="regular">Regular</option>
+                    <option value="premium">Premium</option>
+                </select>
+            </div>
+            <div class="form-actions">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 She's Fit. All rights reserved.</p>
+    <p>123 Wellness Ave, Fit City, FC 12345</p>
+    <p>Email: contact@shesfit.com | Phone: (123) 456-7890</p>
+    <nav>
+        <a href="#">Privacy Policy</a> | 
+        <a href="#">Terms of Service</a> | 
+        <a href="#">Contact Us</a>
+    </nav>
+    </footer>
+</body>
+</html>
